@@ -1,5 +1,5 @@
 {% set name = "cloud-sql-python-connector" %}
-{% set version = "0.4.2" %}
+{% set version = "0.4.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cloud-sql-python-connector-{{ version }}.tar.gz
-  sha256: 1ebc0184c1200056a31e840159db2d281e09e297554f30f54608a48b5129dddd
+  sha256: 199857a64c7b82412d2ff5ca0affb9db72f4c7b10430dafdfc0b2857cae3dd5a
 
 build:
   number: 0

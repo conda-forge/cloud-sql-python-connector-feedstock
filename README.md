@@ -1,11 +1,11 @@
-About cloud-sql-python-connector
-================================
+About cloud-sql-python-connector-feedstock
+==========================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cloud-sql-python-connector-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/GoogleCloudPlatform/cloud-sql-python-connector
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cloud-sql-python-connector-feedstock/blob/main/LICENSE.txt)
 
 Summary: The Cloud SQL Python Connector is a library that can be used alongside a database driver to allow users with sufficient permissions to connect to a Cloud SQL database without having to manually allowlist IPs or manage SSL certificates.
 

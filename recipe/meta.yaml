@@ -7,24 +7,24 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cloud-sql-python-connector-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/cloud-sql-python-connector-{{ version }}.tar.gz
   sha256: c8235589e30a6702e3bdb2408d30be06160b18e573812b88dec5ac6606efb6d5
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
   run:
     - aiohttp
     - cryptography
     - google-api-python-client
     - pyopenssl
-    - python >=3.6
+    - python >={{ python_min }}
     - requests
 
 test:
@@ -35,6 +35,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/GoogleCloudPlatform/cloud-sql-python-connector

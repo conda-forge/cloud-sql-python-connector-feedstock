@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: cloud-sql-python-connector
-  version: "1.19.0"
+  version: "1.20.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 48ecf5eb6fdbb64dcfd3ad55a11bd819e50f34048deac7c9c8e99b6042682588
+  sha256: fdd96153b950040b0252453115604c142922b72cf3636146165a648ac5f6fc30
 
 build:
   number: 0

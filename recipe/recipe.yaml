@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: cloud-sql-python-connector
-  version: "1.20.4"
+  version: 1.21.0
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: fe2dbee747543ad2c720760c53064f0ef42ed04218981e1f7231362a88b3cf44
+  sha256: a5295627caa588c5c4b7b718d1954b8cf43de1dba9749b60b756984a1ea9cb21
 
 build:
   number: 0
@@ -24,13 +24,14 @@ requirements:
     - setuptools
   run:
     - python >=${{ python_min }}
-    - aiofiles
     - aiohttp
     - cryptography >=42.0.0
     - dnspython >=2.0.0
     - requests
     - google-auth >=2.28.0
-
+    - grpcio
+    - protobuf
+    - googleapis-common-protos
 tests:
   - python:
       imports:
